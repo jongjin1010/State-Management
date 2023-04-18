@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "recoil": "^0.7.5"
+    "recoil": "^0.7.5",
+    "redux-devtools-extension": "^2.13.9"
   }
 }
