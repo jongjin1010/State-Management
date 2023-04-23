@@ -5,8 +5,9 @@ import { applyMiddleware, createStore } from "redux";
 import rootReducer from "./modules";
 import { Provider } from "react-redux";
 import myLogger from "./middlewares/myLogger";
+import logger from "redux-logger";
 
-const store = createStore(rootReducer, applyMiddleware(myLogger));
+const store = createStore(rootReducer, applyMiddleware(logger));
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
